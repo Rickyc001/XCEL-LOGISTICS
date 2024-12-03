@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XCEL LOGISTICS  | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="icon" href="img/favicon.ico">
+    <style>
+        /* Import and Global Colors */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+        :root {
+            --primary-bg: #212529;
+            --secondary-bg: #343a40;
+            --highlight-color: #17a2b8;
+            --text-light: #f8f9fa;
+            --accent-color: #ffc107;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-light);
+        }
+
+        nav,
+        footer {
+            background-color: var(--secondary-bg);
+        }
+
+        .hero {
+            padding: 60px 20px;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            background: linear-gradient(to bottom right, var(--highlight-color), var(--secondary-bg));
+            color: var(--text-light);
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 12px;
+        }
+
+        .section-heading {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background: var(--secondary-bg);
+            padding: 20px;
+            border-radius: 12px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .card i {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--accent-color);
+        }
+
+        /* Services Section Text Color */
+#services .section-heading,
+#services .card h3,
+#services .card p {
+    color: #ffffff;
+}
+
+        .cta-section {
+            background-color: var(--highlight-color);
+            color: var(--primary-bg);
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: var(--text-light);
+            margin: 0 10px;
+            font-size: 1.2rem;
+        }
+
+        footer a:hover {
+            color: var(--accent-color);
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong>XCEL LOGISTICS </strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container d-flex flex-column-reverse flex-md-row">
+            <div>
+                <h1>Transforming Waste into Wealth</h1>
+                <p>Sell your unused resources to us and let us handle the rest. Our expertise in recycling and upcycling
+                    ensures a sustainable future for our planet.</p>
+                <a href="#contact" class="btn btn-warning mt-3">Partner with Us</a>
+            </div>
+            <div class="hero-image">
+                <img src="/event/3776063.jpg" alt="Waste management illustration">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <h2 class="section-heading">Our Services</h2>
+        <div class="container cards-container">
+            <div class="card">
+                <i class="fas fa-recycle"></i>
+                <h3>Waste Collection and Recycling</h3>
+                <p>Efficient collection and recycling of waste materials, ensuring a sustainable future.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-cog"></i>
+                <h3>Upcycling and Reprocessing</h3>
+                <p>Transforming waste into valuable resources, reducing landfill waste and promoting eco-friendly
+                    practices.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-hand-holding-usd"></i>
+                <h3>Waste Resource Purchasing</h3>
+                <p>We buy unused resources from individuals and businesses, providing an opportunity to earn revenue
+                    from waste materials.</p>
+            </div>
+        </div>
+    </section>
+
+  
+  <!-- Step-by-Step Guide Section -->
+<section class="stats py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Step-by-Step Guide to Partnering with XCEL LOGISTICS</h2>
+        <p class="mb-5">Join our community of waste management experts and start transforming waste into wealth.</p>
+        <div class="row gy-4">
+            <!-- Step 1 -->
+            <div class="col-md-3">
+                <div class="guide-item shadow-lg p-4 rounded">
+                    <div class="guide-icon mb-3">
+                        <img src="/event/steps/8009057.jpg" alt="Contact Us" width="70">
+                    </div>
+                    <h5 class="mb-2">Step 1: Contact Us</h5>
+                    <p>Reach out to our team to inquire about our waste management services.</p>
+                </div>
+            </div>
+            <!-- Step 2 -->
+            <div class="col-md-3">
+                <div class="guide-item shadow-lg p-4 rounded">
+                    <div class="guide-icon mb-3">
+                        <img src="/event/steps/tvni_bhze_160805.jpg" alt="Schedule Pickup" width="70">
+                    </div>
+                    <h5 class="mb-2">Step 2: Schedule a Pickup</h5>
+                    <p>Arrange for our team to collect your waste materials at a time that suits you.</p>
+                </div>
+            </div>
+            <!-- Step 3 -->
+            <div class="col-md-3">
+                <div class="guide-item shadow-lg p-4 rounded">
+                    <div class="guide-icon mb-3">
+                        <img src="/event/steps/4728933.jpg" alt="Get Paid" width="70">
+                    </div>
+                    <h5 class="mb-2">Step 3: Get Paid</h5>
+                    <p>Receive payment for your collected waste materials, which we'll recycle, upcycle, or resell.</p>
+                </div>
+            </div>
+            <!-- Step 4 -->
+            <div class="col-md-3">
+                <div class="guide-item shadow-lg p-4 rounded">
+                    <div class="guide-icon mb-3">
+                        <img src="/event/steps/6087266.jpg" alt="Track Impact" width="70">
+                    </div>
+                    <h5 class="mb-2">Step 4: Track Your Impact</h5>
+                    <p>Monitor the environmental impact of your waste management efforts through our regular progress updates.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CSS for styling -->
+<style>
+    .stats {
+        background: #f8f9fa;
+        color: #212529;
+    }
+
+    .stats h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    .guide-item {
+        background-color: #fff;
+        border-radius: 10px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .guide-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .guide-icon img {
+        transition: transform 0.3s;
+    }
+
+    .guide-item:hover .guide-icon img {
+        transform: scale(1.1);
+    }
+
+    .guide-item h5 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #17a2b8;
+    }
+
+    .guide-item p {
+        font-size: 0.9rem;
+        color: #6c757d;
+    }
+</style>
+
+<!-- Shop Section -->
+<section class="shop py-5">
+    <div class="container">
+        <h2 class="shop-title mb-4">Eco-Friendly Pieces</h2>
+        <p class="text-center mb-5">Explore our upcycled and recycled product range, turning waste into valuable items.</p>
+
+        <!-- New Items Section -->
+        <div class="new-items-section mb-5">
+            <h3 class="shop-subtitle mb-4">Recent Items</h3>
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+                <!-- Product 1 -->
+                <div class="col">
+                    <div class="item-box shadow-lg">
+                        <img src="event/15 Cute & Crafty DIY Clocks.jpeg" alt="Upcycled Laptop Bag" class="item-img">
+                        <div class="item-content">
+                            <h5 class="item-title">DIY Clocks</h5>
+                            <p class="item-description">Unique and creative DIY clocks made from recycled materials.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col">
+                    <div class="item-box shadow-lg">
+                        <img src="/event/35 Best Oil Drum Furniture Ideas for Modern Homes (1).jpeg" alt="Recycled Glass Vase" class="item-img">
+                        <div class="item-content">
+                            <h5 class="item-title">Oil Drum Furniture</h5>
+                            <p class="item-description">Innovative and eco-friendly furniture made from recycled oil drums.</p>
+                        </div>
+                    </div>
+                </div>
+                  <!-- Product 3 -->
+                  <div class="col">
+                    <div class="item-box shadow-lg">
+                        <img src="/event/8 nuevas ideas de reciclaje con revistas usadas.jpeg" alt="Recycled Glass Vase" class="item-img">
+                        <div class="item-content">
+                            <h5 class="item-title">Recycled Magazine Crafts</h5>
+                            <p class="item-description">Creative and eco-friendly crafts made from recycled magazines.</p>
+                        </div>
+                    </div>
+                </div>
+
+                  <!-- Product 4 -->
+                  <div class="col">
+                    <div class="item-box shadow-lg">
+                        <img src="/event/Amazing Tin Can Crafts_ 76 unexpected Ideas to Try.jpeg" alt="Recycled Glass Vase" class="item-img">
+                        <div class="item-content">
+                        <h5 class="item-title">Tin Can Crafts</h5>
+                        <p class="item-description">Unique and creative crafts made from recycled tin cans.</p>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Featured Items Section -->
+        <div class="featured-items-section mb-5">
+            <h3 class="shop-subtitle mb-4">Featured Items</h3>
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+                <!-- Product 1 -->
+                <div class="col">
+                    <div class="item-box shadow-lg">
+                        <img src="/event/Easy DIY Toy Shelves Using a Tire.jpeg" alt="Upcycled Wooden Phone Case" class="item-img">
+                        <div class="item-content">
+                            <h5 class="item-title">DIY Toy Shelves</h5>
+                            <p class="item-description">Creative and eco-friendly toy shelves made from recycled tires.</p>
+                        </div>
+                    </div>
+                </div>
+
+                  <!-- Product 2 -->
+                  <div class="col">
+                    <div class="item-box shadow-lg">
+                        <img src="/event/You can Build This MC 305 Cardboard Armchair by Nordwerk at Home.jpeg" alt="Upcycled Wooden Phone Case" class="item-img">
+                        <div class="item-content">
+                            <h5 class="item-title">Cardboard Armchair</h5>
+                            <p class="item-description">Innovative and eco-friendly armchair made from recycled cardboard.</p>
+                        </div>
+                    </div>
+                </div>
+
+                  <!-- Product 3 -->
+                  <div class="col">
+                    <div class="item-box shadow-lg">
+                        <img src="/event/DIY Upcycled Tin Can Lanterns 🕯️♻️.jpeg" alt="Upcycled Wooden Phone Case" class="item-img">
+                        <div class="item-content">
+                            <h5 class="item-title">Upcycled Tin Can Lanterns</h5>
+                            <p class="item-description">Unique and eco-friendly lanterns made from upcycled tin cans.</p>
+                        </div>
+                    </div>
+                </div>
+
+                  <!-- Product 4 -->
+                  <div class="col">
+                    <div class="item-box shadow-lg">
+                        <img src="event/Creating Junky Sawhorse Pipe Chalkboard Shade Lamps! On a Dare___.jpeg" alt="Upcycled Wooden Phone Case" class="item-img">
+                        <div class="item-content">
+                            <h5 class="item-title">Upcycled Lamp</h5>
+                            <p class="item-description">Unique and eco-friendly lamp made from upcycled materials.</p>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- All Items Section -->
+        <div class="all-items-section">
+            <h3 class="shop-subtitle mb-4">All Items</h3>
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+                <!-- Product 1 -->
+                <div class="col">
+                    <div class="item-box shadow-lg">
+                        <img src="/event/Pallet Wood & Bed Slats Upcycled into Comfortable Chair • Recyclart.jpeg" alt="Recycled Paper Notebook" class="item-img">
+                        <div class="item-content">
+                            <h5 class="item-title">Upcycled Chair</h5>
+                            <p class="item-description">Comfortable and eco-friendly chair made from upcycled pallet wood and bed slats.</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Product 2 -->
+                 <div class="col">
+                    <div class="item-box shadow-lg">
+                        <img src="/event/How to Make Tin Can Lanterns.jpeg" alt="Recycled Paper Notebook" class="item-img">
+                        <div class="item-content">
+                            <h5 class="item-title">Tin Can Lanterns</h5>
+                            <p class="item-description">Unique and eco-friendly lanterns made from recycled tin cans.</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Product 4 -->
+                 <div class="col">
+                    <div class="item-box shadow-lg">
+                        <img src="/event/Office Chair Makeover - Love Grows Wild.jpeg" alt="Recycled Paper Notebook" class="item-img">
+                        <div class="item-content">
+                            <h5 class="item-title">Upcycled Office Chair</h5>
+                            <p class="item-description">Eco-friendly and stylish office chair made from upcycled materials.</p>
+                        </div>
+                    </div>
+                </div>
+
+                     <!-- Product 4 -->
+                     <div class="col">
+                        <div class="item-box shadow-lg">
+                            <img src="/event/You can Build This MC 305 Cardboard Armchair by Nordwerk at Home.jpeg" alt="Recycled Paper Notebook" class="item-img">
+                            <div class="item-content">
+                                <h5 class="item-title">Cardboard Armchair</h5>
+                                <p class="item-description">Innovative and eco-friendly armchair made from recycled cardboard.</p>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CSS -->
+<style>
+    .shop {
+        background-color: #f8f9fa;
+        color: #212529;
+    }
+
+    .shop-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-align: center;
+        color: #17a2b8;
+    }
+
+    .shop-subtitle {
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-align: center;
+        color: #2D2B47;
+    }
+
+    .item-box {
+        background-color: #343a40;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .item-box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .item-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-bottom: 2px solid #17a2b8;
+    }
+
+    .item-content {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .item-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #ffc107;
+    }
+
+    .item-description {
+        font-size: 0.9rem;
+        color: #d1d1d8;
+    }
+
+    @media (max-width: 768px) {
+        .item-img {
+            height: 150px;
+        }
+
+        .item-box:hover {
+            transform: translateY(-5px);
+        }
+    }
+</style>
+
+
+
+
+
+    <!-- CTA Section -->
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Partner with Us for Sustainable Waste Management</h2>
+        <p>Get in touch with our team to learn more about our waste management services and how we can help you
+            contribute to a greener future.</p>
+        <a href="#contact" class="btn btn-dark">Get Started</a>
+    </section>
+
+ <!-- Footer -->
+<footer class="footer py-4">
+    <div class="container text-center text-md-start">
+        <div class="row">
+            <!-- Contact Information -->
+            <div class="col-md-4 mb-3">
+                <h5 class="footer-title">Contact Us</h5>
+                <p><strong>Phone:</strong> +1-800-555-WASTE</p>
+                <p><strong>Email:</strong> info@xcelsustainability.com</p>
+            </div>
+            <!-- Useful Links -->
+            <div class="col-md-4 mb-3">
+                <h5 class="footer-title">Useful Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#services" class="footer-link">Our Services</a></li>
+                    <li><a href="#partners" class="footer-link">Become a Partner</a></li>
+                    <li><a href="#contact" class="footer-link">Contact Us</a></li>
+                    <li><a href="#about" class="footer-link">About Us</a></li>
+                </ul>
+            </div>
+            <!-- Social Media -->
+            <div class="col-md-4 mb-3">
+                <h5 class="footer-title">Follow Us</h5>
+                <div class="social-icons">
+                    <a href="#" class="footer-icon me-2"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="footer-icon me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <p>&copy; <span id="year"></span> XCEL LOGISTICS. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Footer Styles -->
+<style>
+    .footer {
+        background-color: #343a40;
+        color: #f8f9fa;
+    }
+
+    .footer-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #ffc107;
+    }
+
+    .footer p {
+        margin: 0.2rem 0;
+        font-size: 0.9rem;
+    }
+
+    .footer-link {
+        color: #17a2b8;
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+
+    .footer-link:hover {
+        text-decoration: underline;
+    }
+
+    .social-icons a {
+        color: #f8f9fa;
+        font-size: 1.2rem;
+        transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+        color: #ffc107;
+    }
+</style>
+
+
+
+
+    <!-- Scripts -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
